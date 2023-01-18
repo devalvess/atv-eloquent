@@ -8,10 +8,10 @@
 </head>
 <body>
     <ul>
-        <li>Nome: {{$client->name}}</li>
-        <li>Email: {{$client->email}}</li>
-        <li>Telefone: {{$client->phone}}</li>
-        <li>CPF: {{$client->id->number}}</li>
+        <li>Nome: {{$cliente->name}}</li>
+        <li>Email: {{$cliente->email}}</li>
+        <li>Telefone: {{$cliente->phone}}</li>
+        <li>CPF: {{$cliente->id->number}}</li>
     </ul>
 </body>
 </html>s
