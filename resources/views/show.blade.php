@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{ $client }}</h1>
+    <ul>
+        <li>Nome: {{$client->name}}</li>
+        <li>Email: {{$client->email}}</li>
+        <li>Telefone: {{$client->phone}}</li>
+        <li>CPF: {{$client->id->number}}</li>
+    </ul>
 </body>
-</html>
+</html>s

@@ -25,11 +25,12 @@ class ClientController extends Controller
         return response()->json($client);
     }
 
-    public function show()
+    public function show($client)
     {
-        $client = Client::all();
+        $cliente = Client::find($client);
 
-        return response()->json($client);
+        return response()->json($cliente);
+          
     }
  
 }
