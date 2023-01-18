@@ -14,4 +14,5 @@ use App\Http\Controllers\ClientController;
 |
 */
 
+Route::get('/clients/show/{client}', [ClientController::class, 'show']);
 Route::post('/clients/store', [ClientController::class, 'store']);
