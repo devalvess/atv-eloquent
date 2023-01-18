@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
+
+    public function create()
+    {
+        return view('/create');
+    }
+
     public function store(Request $request)
     {
        $client = Client::create([
@@ -16,14 +22,14 @@ class ClientController extends Controller
             'id_number'=>$request->id_number
         ]);
 
-        return response('/')->json($client);
+        return response()->json($client);
     }
 
-    public function show($client)
+    public function show()
     {
-        $client = Client::find($client);
+        $client = Client::all();
 
-        return response('/clients/show/{client}')->json($client);
+        return response()->json($client);
     }
  
 }

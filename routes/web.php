@@ -13,6 +13,6 @@ use App\Http\Controllers\ClientController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/clients/create', [ClientController::class, 'create']);
 Route::get('/clients/show/{client}', [ClientController::class, 'show']);
 Route::post('/clients/store', [ClientController::class, 'store']);
