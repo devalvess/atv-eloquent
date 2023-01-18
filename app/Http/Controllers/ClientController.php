@@ -35,7 +35,7 @@ class ClientController extends Controller
 
     public function name(Request $request)
     {
-        $nome = Model::where('name', "=",'Jose')->firts();
+        $nome = Client::where('name', '=','Jose')->get();
 
         return response()->json($nome);
 
