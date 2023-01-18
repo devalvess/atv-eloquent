@@ -15,7 +15,7 @@ class ClientController extends Controller
             'id_number'=>$request->id_number
         ]);
 
-        return redirect('/');
+        return response()->json($client);
     }
  
 }
