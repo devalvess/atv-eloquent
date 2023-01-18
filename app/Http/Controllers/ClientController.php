@@ -33,11 +33,11 @@ class ClientController extends Controller
           
     }
 
-    public function name(Request $request)
+    public function name($name)
     {
-        $nome = Client::where('name', '=','Jose')->first();
+        $info = Client::find($name);
 
-        return response()->json($nome);
+        return response()->json($info);
 
     }
  
