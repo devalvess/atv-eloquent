@@ -51,7 +51,7 @@ class ClientController extends Controller
     public function bills($client)
     {
 
-        $client = Client::select(['email'])->where('name', '=', $client)->get();
+        $client = Client::select(['email'])->where('email', '=', 'admin@testando')->get();
 
         return response()->json($client);
 
