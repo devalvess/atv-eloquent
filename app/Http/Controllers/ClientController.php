@@ -43,9 +43,9 @@ class ClientController extends Controller
 
     public function search($text)
     {
-       $texto = Client::select(['id', 'name' ,'email','id_number'])->where('name', '=', $text)->first();
+       $text = Client::select(['id', 'name' ,'email','id_number'])->where('name', 'LIKE', '%jo%')->first();
 
-       return response()->json($texto);
+       return response()->json($text);
     } 
 
 }
