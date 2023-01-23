@@ -48,4 +48,13 @@ class ClientController extends Controller
        return response()->json($text);
     } 
 
+    public function bills($client)
+    {
+        $client = Client::all();
+
+        return response()->json($client);
+
+
+    }
+
 }

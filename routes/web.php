@@ -18,3 +18,4 @@ Route::get('/clients/create', [ClientController::class, 'create']);
 Route::get('/clients/show/{client}', [ClientController::class, 'show']);
 Route::post('/clients/store', [ClientController::class, 'store']);
 Route::get('/clients/search/{text}', [ClientController::class, 'search']);
+Route::get('/clients/bills/{client}', [ClientController::class, 'bills']);
